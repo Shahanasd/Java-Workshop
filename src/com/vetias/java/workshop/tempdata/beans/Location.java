@@ -60,3 +60,4 @@ public class Location {
         return postalCode;
     }
 }
+
