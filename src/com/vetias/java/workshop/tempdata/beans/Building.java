@@ -20,4 +20,16 @@ public class Building {
     public String getArea() {
         return area;
     }
+    public void setOpenTime(LocalDateTime aOpenTime) {
+        openTime = aOpenTime;
+    }
+    public LocalDateTime getOpenTime() {
+        return openTime;
+    }
+    public void setCloseTime(LocalDateTime aCloseTime) {
+        closeTime = aCloseTime;
+    }
+    public LocalDateTime getCloseTime() {
+        return closeTime;
+    }
 }
