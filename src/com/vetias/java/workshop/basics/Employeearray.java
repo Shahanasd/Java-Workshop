@@ -15,7 +15,7 @@ public class Employeearray {
         Employee[4][1]=30000;
         System.out.println("Employee ID \t Salary");
         for(int i=0;i<Employee.length;i++){
-            System.out.println(Employee[i][0] + "\t\t" + Employee[i][1]);
+            System.out.println(Employee[i][0] + " " + Employee[i][1]);
         }
     }
 }
