@@ -59,5 +59,50 @@ public class Location {
     public String getPostalCode(){
         return postalCode;
     }
-}
 
+    @Override
+    public String toString() {
+        return "Location{name"+ name+
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", description=" +description +
+                ",country=" + country +
+                ", city=" + city +
+                ", address=" + address +
+                ", postalCode=" + postalCode +
+                "}";
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Location)) return false;
+
+        Location location = (Location) o;
+
+        if (Double.compare(location.latitude, latitude) != 0) return false;
+        if (Double.compare(location.longitude, longitude) != 0) return false;
+        if (name != null ? !name.equals(location.name) : location.name != null) return false;
+        if (description != null ? !description.equals(location.description) : location.description != null)
+            return false;
+        if (country != null ? !country.equals(location.country) : location.country != null) return false;
+        if (city != null ? !city.equals(location.city) : location.city != null) return false;
+        if (address != null ? !address.equals(location.address) : location.address != null) return false;
+        return postalCode != null ? postalCode.equals(location.postalCode) : location.postalCode == null;
+    }
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = name != null ? name.hashCode() : 0;
+        temp = Double.doubleToLongBits(latitude);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(longitude);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (description != null ? description.hashCode() : 0);
+        result = 31 * result + (country != null ? country.hashCode() : 0);
+        result = 31 * result + (city != null ? city.hashCode() : 0);
+        result = 31 * result + (address != null ? address.hashCode() : 0);
+        result = 31 * result + (postalCode != null ? postalCode.hashCode() : 0);
+        return result;
+    }
+}
