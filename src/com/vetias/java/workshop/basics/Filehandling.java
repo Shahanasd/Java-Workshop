@@ -13,7 +13,7 @@ public class Filehandling {
             File[] files = file.listFiles();
             if (files != null) {
                 for (File f : files) {
-                    System.out.println("File: " + f.getName() + " - Size: " + f.length() + " bytes");
+                    System.out.println("File: " + f.getName());
                 }
             } else {
                 System.out.println("The directory is empty.");
