@@ -16,7 +16,6 @@ public class Hostel extends Building{
      public void setNumberOfRooms(int numberOfRooms) {
          this.numberOfRooms = numberOfRooms;
      }
-    @Override
     public void printDetails() {
         super.printDetails();
         System.out.println("Hostel Details:");

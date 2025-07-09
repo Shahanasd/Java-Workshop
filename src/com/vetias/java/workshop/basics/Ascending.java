@@ -1,8 +1,9 @@
 package src.com.vetias.java.workshop.basics;
 import java.util.Arrays;
 
+
 public class Ascending{
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         float[] price={87.89f,56.65f,31.2f,78.9f,65.43f};
         System.out.println("Arrays before sorting:"+Arrays.toString(price));
         Arrays.sort(price);

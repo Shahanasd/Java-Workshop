@@ -1,7 +1,7 @@
 package src.com.vetias.java.workshop.basics;
 
 public class Employeearray {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         Integer[][] Employee=new Integer[5][2];
         Employee[0][0]=1;
         Employee[0][1]=10000;

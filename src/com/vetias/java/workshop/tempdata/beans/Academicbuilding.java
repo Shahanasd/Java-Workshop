@@ -17,7 +17,6 @@ public class Academicbuilding extends Building {
         this.isAuditoriumAvailable = isAuditoriumAvailable;
     }
 
-    @Override
     public void printDetails() {
         super.printDetails();
         System.out.println("Academic Building Details:");
