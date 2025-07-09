@@ -1,6 +1,7 @@
 package src.com.vetias.java.workshop.tempdata.beans;
+import java.io.Serializable;
 
-public class Location {
+public class Location implements Serializable {
     private String name;
     private double latitude;
     private double longitude;
