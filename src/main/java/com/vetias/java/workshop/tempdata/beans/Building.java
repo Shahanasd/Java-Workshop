@@ -33,7 +33,7 @@ public class Building {
         return closeTime;
     }
     public void printDetails() {
-        // TODO Auto-generated method stub
+       
         throw new UnsupportedOperationException("Unimplemented method 'printDetails'");
     }
 }
