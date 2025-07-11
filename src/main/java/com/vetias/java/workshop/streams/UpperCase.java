@@ -3,7 +3,7 @@ package com.vetias.java.workshop.streams;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NameStartWithCount {
+public class UpperCase {
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
         names.add("Shahana");
@@ -12,7 +12,8 @@ public class NameStartWithCount {
         names.add("Sweety");
         names.add("Sanjana");
         names.add("Shahana");
-        long namecount=names.stream().filter(name-> name.startsWith("S")).distinct().count();
-        System.out.println("Number of names starting with 'S': " + namecount);
+        names.stream().filter(name-> name.startsWith("S")||name.startsWith("s")).distinct()
+                .map(String::toUpperCase)
+                .forEach(System.out::println);
     }
 }
