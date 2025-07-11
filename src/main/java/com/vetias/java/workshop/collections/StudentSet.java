@@ -11,6 +11,7 @@ public class StudentSet {
         studentIds.add(107);
         studentIds.add(103);
         studentIds.add(102);
+        studentIds.add(101);
         System.out.println("Student IDs: " + studentIds);
     }
 }
